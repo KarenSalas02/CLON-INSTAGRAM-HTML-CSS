@@ -1,0 +1,432 @@
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.nav{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0px;
+    height: 99.9dvh;
+    width: 52px;
+    border-right: 1px solid lightgray;
+    margin-left: -25%;
+}
+
+.img_ig{
+    margin-top: 70%;
+    margin-bottom: 100%;
+}
+
+.img_nav{
+    margin-bottom: 70%;
+}
+
+header{
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+    color: #eeee;
+}
+
+.foto_de_perfil{
+    padding-left: 30px;
+    display: flex;
+    padding-right: 110px;
+}
+
+.fotoPerfil{
+    height: 155px;
+    border-radius: 50%;
+    
+}
+
+.usuario_Seguir{
+    font-size: 80%;
+    display: flex;
+    align-items: center;
+}
+
+.nombre_Usuario{
+    font-weight: 400;
+    font-size: 170%;
+}
+
+.verificado{
+    width: 60px;
+    margin-top: 0.9%;
+}
+
+.btn_Seguir{
+    background-color: #0095F6;
+    color: #eee;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 7px 16px;
+    text-align: center;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn_EnviarSMS{
+    background-color: #e4e4e4;
+    color: black;
+    font-weight: 600;
+    font-size: 100%;
+    padding: 7px 16px;
+    text-align: center;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.sugerencia{
+    background-color: #e4e4e4;
+    width: 19px;
+    padding: 7px;
+    border-radius: 25%;
+    margin-left: 10px;
+}
+
+.opciones{
+    margin-left: 20px;
+    margin-top: -3%;
+    font-size: 90%;
+    font-weight: bold;
+}
+
+section{
+
+    margin-top: -3.1%;
+}
+
+.publicaciones_Seguidores{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -5%;
+}
+
+.texto4{
+    font-weight: 500;
+    font-size: 100%;
+    margin: 0px 0px 20px;
+    margin-top: 2%;
+}
+
+.adobeL, .productoS, .talento{
+    margin-bottom: -4.5%;
+}
+
+.adobeL{
+    font-size: 90%;
+    font-weight: 500;
+}
+
+.productoS{
+    font-weight: 400;
+    color: #858585;
+}
+
+.talento{
+    font-weight: 400;
+}
+
+.enlace{
+    color: #155b9c;
+    display: flex;
+}
+
+
+div.imagenes_info img{
+    width: 100%;
+    height: auto;
+    margin-top: -20px;
+    border-radius: 50%;
+    border: solid;
+    border-color: rgba(66, 66, 66, 0.801);
+    border-width: 3px;
+    justify-content:space-between;
+    align-content:center;
+
+}
+
+.img_infos{
+    float: left;
+    justify-content:space-between;
+    width: 80px;
+    padding-right: 60px;
+}
+
+.pie{
+    text-align: center;
+    font-size: 70%;
+    margin-top: 12%;
+}
+
+.h{
+    width: 95%;
+    margin-left: -5%;
+    height: -500px; 
+    padding: 0px;
+}
+
+.publicaciones{
+    display: flex;
+    padding-left: 170px;
+    align-items: center;
+
+}
+
+.texto_publi{
+    font-size: 80%;
+    font-weight: 500;
+    padding-left: 7px;
+}
+
+.reels{
+    display: flex;
+    padding-left: 70px;
+    align-items: center;
+
+}
+
+.texto_reels{
+    font-size: 80%;
+    font-weight: 500;
+    padding-left: 6px;
+}
+
+.guias{
+    display: flex;
+    padding-left: 65px;
+    align-items: center;
+
+}
+
+.texto_guia{
+    font-size: 80%;
+    font-weight: 500;
+    padding-left: 6px;
+}
+
+.etiqueta{
+    display: flex;
+    padding-left: 80px;
+    align-items: center;
+
+}
+
+.texto_eti{
+    font-size: 80%;
+    font-weight: 500;
+    padding-left: 6px;
+}
+
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(3, 308px);
+    margin-left: -5%;
+}
+
+.img_ga{
+    width: 305px;
+    height: 305px;
+}
+
+.menu{
+    position: absolute;
+    display: flex;
+    align-content: space-between;
+    margin-top: -0.5%;
+    
+}
+
+    /*Preferencias de usuario*/
+
+@media (prefers-color-scheme: dark) {
+        :root {
+        --background-color: #000000;
+        --foreground-color: #fff;
+        }
+    }
+      
+@media (prefers-color-scheme: light) {
+    :root {
+        --background-color: #fff;
+        --foreground-color: #000000;
+        }
+    }
+      
+body {
+    background-color: var(--background-color);
+    color: var(--foreground-color);
+    margin-top: 3.5%;
+    margin-left: 27%;
+    }
+
+@media (max-width: 1180px){
+    body{
+        margin-left: 10%;
+    }
+
+    .img_ga{
+        width: 320px;
+        height: 320px;
+    }
+
+    .galeria{
+        grid-template-columns: repeat(3, 323px);
+    }
+
+    .img_infos{
+        width: 75px;
+        padding-right: 50px;
+        
+    }
+
+    .h{
+        width: 110%;
+        margin-left: -0.1%;
+        height: -500px; 
+        padding: 0px;
+    }
+
+    .menu{
+        margin-left: -2%;
+    }
+
+    .img_publi{
+        width: 10px;
+        height: 10px;
+    }
+
+    .img_reels{
+        width: 15px;
+        height: 15px;
+    }
+
+    .img_gui{
+        width: 10px;
+        height: 10px;
+    }
+
+    .img_eti{
+        width: 15px;
+        height: 15px;
+    }
+
+    .fotoPerfil{
+        height: 150px;
+    }
+
+    .foto_de_perfil{
+        padding-right: 100px;
+    }
+}
+
+
+@media (max-width: 843px){
+    body{
+        margin-left: -0.01%;
+    }
+
+    .img_ga{
+        width: 190px;
+        height: 190px;
+    }
+
+    .galeria{
+        grid-template-columns: repeat(3, 193px);
+    }
+
+    .texto_publi, .texto_reels, .texto_guia, .texto_eti{
+        display: none;
+    }
+
+    .img_infos{
+        width: 60px;
+        padding-right: 15px;
+        
+    }
+
+    .btn_Seguir, .btn_EnviarSMS, .sugerencia{
+        margin-top: 25%;
+        margin-left: -38%;
+    }
+
+    .btn_EnviarSMS{
+        margin-left: 2%;
+    }
+
+    .sugerencia{
+        margin-left: 2%;
+    }
+
+    .adobeL, .productoS, .talento{
+        margin-bottom: -4.5%;
+        margin-left: -34%;
+    }
+
+    .enlace{
+        margin-left: -34%;
+    }
+
+    .h{
+        width: 100%;
+        margin-left: -0.1%;
+        height: -500px; 
+        padding: 0px;
+    }
+
+    .menu{
+        margin-left: -10%;
+    }
+
+    .img_publi{
+        width: 20px;
+        height: 20px;
+    }
+
+    .img_reels{
+        width: 25px;
+        height: 25px;
+    }
+
+    .img_gui{
+        width: 18px;
+        height: 18px;
+    }
+
+    .img_eti{
+        width: 25px;
+        height: 25px;
+    }
+
+    .fotoPerfil{
+        height: 85px;
+    }
+
+    .foto_de_perfil{
+        padding-right: 40px;
+        margin-top: 6%;
+    }
+
+    .opciones{
+        margin-left: -25%;
+    }
+
+
+    .galeria{
+        grid-template-columns: repeat(3, 238px);
+    }
+
+    .img_ga{
+        width: 235px;
+        height: 235px;
+    }
+}
+
